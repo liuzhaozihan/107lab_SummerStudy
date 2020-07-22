@@ -1,0 +1,1132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: 'Arial', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    width: 100%;
+    height: 2300px;
+    min-width: 1200px;
+    user-select: none;
+    background-color: #F5F6F0;
+}
+
+#Header {
+    width: 100%;
+    height: 120px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #F5F6F0;
+}
+
+.logo {
+    float: left;
+    box-sizing: border-box;
+    width: fit-content;
+    height: fit-content;
+    overflow: hidden;
+    margin-left: 15%;
+}
+
+.logo img {
+    height: 96px;
+    width: 600px;
+}
+
+#search {
+    display: block;
+    float: right;
+    width: 350px;
+    height: 30px;
+    margin-top: 30px;
+    margin-right: 15%;
+}
+
+.search_box {
+    padding-left: 30px;
+    border: 1px solid gray;
+    width: 220px;
+    height: 40px;
+    border-radius: 30px 0 0 30px;
+}
+
+.search_btn {
+    width: 60px;
+    height: 40px;
+    background: #1877B7;
+    color: white;
+    border-radius: 0 30px 30px 0;
+}
+
+
+/*下拉菜单*/
+
+.wrap {
+    width: 100%;
+    height: 54px;
+    background-color: #1877B7;
+}
+
+.wrap>ul>li {
+    float: left;
+    height: 54px;
+    margin-right: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.wrap>ul>li:hover {
+    background-color: #4daceb;
+    border-left: 3px solid red;
+    border-top-left-radius: 5px;
+}
+
+.wrap a {
+    display: block;
+    height: 54px;
+    width: 127px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    line-height: 54px;
+    text-align: center;
+}
+
+.wrap li ul {
+    position: absolute;
+    top: 54px;
+    display: none;
+    z-index: 10;
+}
+
+.wrap li {
+    background-color: #1877B7;
+}
+
+.wrap li:hover {
+    background-color: #4daceb;
+    border-left: 4px solid red;
+}
+
+.block {
+    transition: 1s;
+    transform: rotateY(360deg);
+}
+
+
+/* 大轮播图 */
+
+.banner {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner_img {
+    width: 400%;
+    height: 450px;
+    overflow: hidden;
+}
+
+.banner_img ul {
+    position: relative;
+}
+
+.banner_img ul li img {
+    float: left;
+}
+
+.banner_point {
+    width: 100px;
+    height: 50px;
+    left: 60%;
+    margin-left: -250px;
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+
+.banner_point ol {
+    width: 360px;
+    position: absolute;
+    top: 7px;
+    margin: 0 auto;
+}
+
+.banner_point ol li {
+    width: 12px;
+    height: 12px;
+    border-radius: 20px;
+    border: 2.5px solid white;
+    background-color: #cccbca;
+    float: left;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.banner_point ol li:hover {
+    background-color: #81807C !important;
+}
+
+.banner_img img {
+    width: 25%;
+    height: 450px;
+}
+
+.point_current {
+    background-color: #81807C !important;
+}
+
+.banner_prev {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    top: 40%;
+    left: 30px;
+    cursor: pointer;
+    overflow: hidden;
+    display: none;
+}
+
+.banner_next {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    top: 40%;
+    right: 30px;
+    cursor: pointer;
+    overflow: hidden;
+    display: none;
+}
+
+.banner_prev:hover {
+    opacity: 1;
+}
+
+.banner_next:hover {
+    opacity: 1;
+}
+
+
+/*主要内容*/
+
+.main_content {
+    margin: 0 auto;
+    width: 70%;
+    height: fit-content;
+    background-color: #F5F6F0;
+}
+
+.notice {
+    width: 100%;
+    height: 110px;
+}
+
+.title {
+    margin-top: 20px;
+    border-bottom: 2px solid #1877B7;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+.title>a {
+    font-size: 18px;
+}
+
+.title span {
+    float: right;
+}
+
+.title_content {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.title_content_date {
+    display: block;
+    font-size: 20px;
+    color: #1877B7;
+    border-right: 1px solid gainsboro;
+    padding-right: 20px;
+    margin-right: 20px;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+
+.title_content a {
+    line-height: 40px;
+}
+
+.title_content a:hover {
+    color: #1877B7;
+}
+
+.title_content img {
+    float: right;
+    width: 80px;
+    height: 80px;
+    margin-top: -15px;
+}
+
+.news {
+    width: 100%;
+    height: 300px;
+}
+
+.content_nav {
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 310px;
+    height: 230px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.content_nav img {
+    width: 310px;
+    height: 230px;
+}
+
+.content_nav ul {
+    width: 930px;
+    height: 230px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.content_nav ul li {
+    width: 310px;
+    height: 230px;
+    float: left;
+}
+
+.content_nav ol {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    z-index: 10;
+}
+
+.content_nav ol li {
+    width: 23px;
+    height: 17px;
+    float: left;
+    background-color: rgb(105, 103, 103);
+    text-align: center;
+    line-height: 17px;
+    color: white;
+    border-left: 0.5px solid white;
+    border-right: 0.5px solid white;
+    cursor: pointer;
+}
+
+.content_nav ol li:hover {
+    background-color: silver;
+}
+
+.little_current {
+    background-color: red !important;
+}
+
+.news_title {
+    height: 236px;
+    margin-top: -230px;
+    float: right;
+}
+
+.news_title ul li {
+    float: right;
+    width: 330px;
+    border-bottom: 1px solid gainsboro;
+    font-size: 14px;
+    padding: 10px;
+    height: 38px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.news_title ul li a:hover {
+    color: #1877B7;
+}
+
+.bellow {
+    width: 100%;
+    height: 660px;
+}
+
+.bellow_left {
+    width: 60%;
+    height: 660px;
+    float: left;
+}
+
+.item1 {
+    height: 220px;
+    width: 100%;
+}
+
+.item1 img {
+    width: 30px;
+    height: 30px;
+}
+
+.item1 ul li {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    margin-top: 15px;
+    padding-left: 10px;
+}
+
+.item1 ul li a:hover {
+    color: #1877B7;
+}
+
+.item1 ul li span {
+    display: block;
+    border-right: 1px solid gainsboro;
+    height: 30px;
+    line-height: 30px;
+    width: 50px;
+    float: left;
+    margin-right: 20px;
+}
+
+.item2 {
+    height: 220px;
+    width: 100%;
+}
+
+.item2 ul li {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    margin-top: 15px;
+    padding-left: 10px;
+}
+
+.item2 ul li a:hover {
+    color: #1877B7;
+}
+
+.item2 ul li span {
+    display: block;
+    width: 100px;
+    height: 30px;
+    background: url(../images/guide.png) 0 0 no-repeat;
+    background-size: 100px 30px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    float: left;
+    margin-right: 20px;
+}
+
+.item3 {
+    height: 220px;
+    width: 100%;
+}
+
+.item3 ul li {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    margin-top: 15px;
+    padding-left: 10px;
+}
+
+.item3 ul li a:hover {
+    color: #1877B7;
+}
+
+.item3 ul li span {
+    display: block;
+    float: left;
+    width: 110px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background: #F5F6F0;
+    color: #1877B7;
+    font-size: 14px;
+    margin-right: 20px;
+    border-radius: 3px
+}
+
+.bellow_right {
+    margin: 0 auto;
+}
+
+.item4 {
+    width: 418px;
+    height: 198px;
+    float: right;
+    margin-top: 35px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #009999;
+    position: relative;
+}
+
+.icon {
+    display: block;
+    width: 130px;
+    height: 198px;
+    text-align: center;
+    line-height: 200px;
+    float: left;
+}
+
+.icon img {
+    margin: 40% auto;
+    width: 109px;
+    height: 103px;
+}
+
+.item4 span {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    display: none;
+}
+
+.item5 {
+    width: 418px;
+    height: 198px;
+    float: right;
+    margin-top: 40px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #bf3b48;
+    position: relative;
+}
+
+.item5 span {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    display: none;
+}
+
+.item6 {
+    width: 418px;
+    height: 198px;
+    float: right;
+    margin-top: 40px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #9a0048;
+    position: relative;
+}
+
+.item6 span {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    display: none;
+}
+
+.piclinks {
+    margin: 120px auto 30px;
+    height: 200px;
+    width: 100%;
+}
+
+.piclinks ul li {
+    float: left;
+    width: 200px;
+    height: 140px;
+    padding: 8px;
+    margin-right: 50px;
+    border: 1px solid gainsboro;
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+    position: relative;
+    cursor: pointer;
+}
+
+.piclinks ul li a {
+    width: 200px;
+    height: 140px;
+}
+
+.piclinks img {
+    width: 200px;
+    height: 140px;
+}
+
+.piclinks ul li span {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    width: 92%;
+    display: block;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+}
+
+.links {
+    width: 1200px;
+    height: 100px;
+    margin: 0px auto;
+}
+
+#stage1 {
+    perspective: 1000px;
+    width: 80px;
+    height: 30px;
+    float: left;
+}
+
+#stage1 .cubic1 {
+    position: relative;
+    transform-style: preserve-3d;
+    width: 80px;
+    height: 20px;
+    margin: 40px auto 20px 20px;
+    animation: myfirst 3s linear infinite paused;
+}
+
+#stage1 .cubic1:hover {
+    animation-play-state: running;
+}
+
+#stage1 .cubic1 div {
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    background-color: #2195de;
+    color: aliceblue;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.front {
+    transform: translateZ(15px);
+}
+
+.behind {
+    transform: rotateX(180deg) translateZ(15px);
+}
+
+.upper {
+    transform: rotateX(90deg) translateZ(15px);
+}
+
+.lower {
+    transform: rotateX(-90deg) translateZ(15px);
+}
+
+@keyframes myfirst {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(360deg);
+    }
+}
+
+#stage2 {
+    perspective: 1000px;
+    width: 100px;
+    height: 30px;
+    margin-left: 50px;
+    float: left;
+}
+
+#stage2 .cubic2 {
+    position: relative;
+    transform-style: preserve-3d;
+    width: 100px;
+    height: 20px;
+    margin: 40px auto 100px 20px;
+    animation: myfirst 3s linear infinite paused;
+}
+
+#stage2 .cubic2:hover {
+    animation-play-state: running;
+}
+
+#stage2 .cubic2 div {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background-color: #2195de;
+    color: aliceblue;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#stage3 {
+    perspective: 1000px;
+    width: 100px;
+    height: 30px;
+    margin-left: 50px;
+    float: left;
+}
+
+#stage3 .cubic3 {
+    position: relative;
+    transform-style: preserve-3d;
+    width: 100px;
+    height: 20px;
+    margin: 40px auto 100px 20px;
+    animation: myfirst 3s linear infinite paused;
+}
+
+#stage3 .cubic3:hover {
+    animation-play-state: running;
+}
+
+#stage3 .cubic3 div {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background-color: #2195de;
+    color: aliceblue;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#stage4 {
+    perspective: 1000px;
+    width: 100px;
+    height: 30px;
+    margin-left: 50px;
+    float: left;
+}
+
+#stage4 .cubic4 {
+    position: relative;
+    transform-style: preserve-3d;
+    width: 100px;
+    height: 20px;
+    margin: 40px auto 100px 20px;
+    animation: myfirst 3s linear infinite paused;
+}
+
+#stage4 .cubic4:hover {
+    animation-play-state: running;
+}
+
+#stage4 .cubic4 div {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background-color: #2195de;
+    color: aliceblue;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#stage5 {
+    perspective: 1000px;
+    width: 130px;
+    height: 30px;
+    margin-left: 50px;
+    float: left;
+}
+
+#stage5 .cubic5 {
+    position: relative;
+    transform-style: preserve-3d;
+    width: 130px;
+    height: 20px;
+    margin: 40px auto 100px 20px;
+    animation: myfirst 3s linear infinite paused;
+}
+
+#stage5 .cubic5:hover {
+    animation-play-state: running;
+}
+
+#stage5 .cubic5 div {
+    position: absolute;
+    width: 130px;
+    height: 30px;
+    background-color: #2195de;
+    color: aliceblue;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#stage6 {
+    perspective: 1000px;
+    width: 140px;
+    height: 30px;
+    margin-left: 50px;
+    float: left;
+}
+
+#stage6 .cubic6 {
+    position: relative;
+    transform-style: preserve-3d;
+    width: 140px;
+    height: 20px;
+    margin: 40px auto 100px 20px;
+    animation: myfirst 3s linear infinite paused;
+}
+
+#stage6 .cubic6:hover {
+    animation-play-state: running;
+}
+
+#stage6 .cubic6 div {
+    position: absolute;
+    width: 140px;
+    height: 30px;
+    background-color: #2195de;
+    color: aliceblue;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#stage7 {
+    perspective: 1000px;
+    width: 70px;
+    height: 30px;
+    margin-left: 50px;
+    float: left;
+}
+
+#stage7 .cubic7 {
+    position: relative;
+    transform-style: preserve-3d;
+    width: 70px;
+    height: 20px;
+    margin: 40px auto 100px 20px;
+    animation: myfirst 3s linear infinite paused;
+}
+
+#stage7 .cubic7:hover {
+    animation-play-state: running;
+}
+
+#stage7 .cubic7 div {
+    position: absolute;
+    width: 70px;
+    height: 30px;
+    background-color: #2195de;
+    color: aliceblue;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#stage8 {
+    perspective: 1000px;
+    width: 90px;
+    height: 30px;
+    margin-left: 50px;
+    float: left;
+}
+
+#stage8 .cubic8 {
+    position: relative;
+    transform-style: preserve-3d;
+    width: 90px;
+    height: 20px;
+    margin: 40px auto 100px 20px;
+    animation: myfirst 3s linear infinite paused;
+}
+
+#stage8 .cubic8:hover {
+    animation-play-state: running;
+}
+
+#stage8 .cubic8 div {
+    position: absolute;
+    width: 90px;
+    height: 30px;
+    background-color: #2195de;
+    color: aliceblue;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#stage9 {
+    perspective: 1000px;
+    width: 120px;
+    height: 30px;
+    margin-top: 30px;
+    float: left;
+}
+
+#stage9 .cubic9 {
+    position: relative;
+    transform-style: preserve-3d;
+    width: 120px;
+    height: 20px;
+    margin: 40px auto 100px 20px;
+    animation: myfirst 3s linear infinite paused;
+}
+
+#stage9 .cubic9:hover {
+    animation-play-state: running;
+}
+
+#stage9 .cubic9 div {
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    background-color: #2195de;
+    color: aliceblue;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#stage10 {
+    perspective: 1000px;
+    width: 260px;
+    height: 30px;
+    margin-left: 50px;
+    margin-top: 30px;
+    float: left;
+}
+
+#stage10 .cubic10 {
+    position: relative;
+    transform-style: preserve-3d;
+    width: 260px;
+    height: 20px;
+    margin: 40px auto 100px 20px;
+    animation: myfirst 3s linear infinite paused;
+}
+
+#stage10 .cubic10:hover {
+    animation-play-state: running;
+}
+
+#stage10 .cubic10 div {
+    position: absolute;
+    width: 260px;
+    height: 30px;
+    background-color: #2195de;
+    color: aliceblue;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#stage11 {
+    perspective: 1000px;
+    width: 200px;
+    height: 30px;
+    margin-left: 50px;
+    margin-top: 30px;
+    float: left;
+}
+
+#stage11 .cubic11 {
+    position: relative;
+    transform-style: preserve-3d;
+    width: 200px;
+    height: 20px;
+    margin: 40px auto 100px 20px;
+    animation: myfirst 3s linear infinite paused;
+}
+
+#stage11 .cubic11:hover {
+    animation-play-state: running;
+}
+
+#stage11 .cubic11 div {
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    background-color: #2195de;
+    color: aliceblue;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#stage12 {
+    perspective: 1000px;
+    width: 100px;
+    height: 30px;
+    margin-left: 50px;
+    margin-top: 30px;
+    float: left;
+}
+
+#stage12 .cubic12 {
+    position: relative;
+    transform-style: preserve-3d;
+    width: 100px;
+    height: 20px;
+    margin: 40px auto 100px 20px;
+    animation: myfirst 3s linear infinite paused;
+}
+
+#stage12 .cubic12:hover {
+    animation-play-state: running;
+}
+
+#stage12 .cubic12 div {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background-color: #2195de;
+    color: aliceblue;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#stage13 {
+    perspective: 1000px;
+    width: 100px;
+    height: 30px;
+    margin-left: 50px;
+    margin-top: 30px;
+    float: left;
+}
+
+#stage13 .cubic13 {
+    position: relative;
+    transform-style: preserve-3d;
+    width: 100px;
+    height: 20px;
+    margin: 40px auto 100px 20px;
+    animation: myfirst 3s linear infinite paused;
+}
+
+#stage13 .cubic13:hover {
+    animation-play-state: running;
+}
+
+#stage13 .cubic13 div {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background-color: #2195de;
+    color: aliceblue;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#stage14 {
+    perspective: 1000px;
+    width: 100px;
+    height: 30px;
+    margin-left: 50px;
+    margin-top: 30px;
+    float: left;
+}
+
+#stage14 .cubic14 {
+    position: relative;
+    transform-style: preserve-3d;
+    width: 100px;
+    height: 20px;
+    margin: 40px auto 100px 20px;
+    animation: myfirst 3s linear infinite paused;
+}
+
+#stage14 .cubic14:hover {
+    animation-play-state: running;
+}
+
+#stage14 .cubic14 div {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background-color: #2195de;
+    color: aliceblue;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.end {
+    width: 100%;
+    height: 120px;
+    margin-top: 60px;
+    background-color: #1877B7;
+}
+
+.end span {
+    width: 100%;
+    height: 40px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    display: block;
+}
+
+.end a {
+    font-size: 14px;
+    color: white;
+}
+
+.end a:hover {
+    color: rgb(165, 3, 3);
+}

@@ -1,0 +1,68 @@
+*{
+    margin:0;
+    padding:0px;
+}
+.banner {
+    width: 320px;
+    height: 230px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.banner #banner_style1 {
+    width: 500%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.banner #banner_style1 li {
+    list-style: none;
+    height: 230px;
+    float: left;
+}
+
+#banner_style1 .length {
+    height: 230px;
+    width: 320px;
+}
+
+#buttons .buttons_style .on {
+    background: rgb(255, 0, 0);
+}
+
+#buttons {
+    position: absolute;
+    height: 20px;
+    width: 63px;
+    background: white;
+    bottom: 0px;
+    right: 0px;
+}
+
+#buttons span {
+    cursor: pointer;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-left: 1px;
+    background: rgb(129, 128, 124);
+
+}
+
+#buttons span:hover {
+    background: rgb(153, 153, 153);
+}
+
+.buttons_style {
+    margin: 0 auto;
+    width: 63px;
+    height: 20px;
+
+}
+
+
+.fix {
+    float: left;
+}
