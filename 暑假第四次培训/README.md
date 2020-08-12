@@ -48,7 +48,7 @@
 
 ## 学习资料
 CodeIgniter中国官网：https://codeigniter.org.cn/ <br/>
-CI框架实力视频：链接: https://pan.baidu.com/s/1xsJ0hM-sCChgNa1AIZnNFA 密码: cab4<br>
+CI框架实力视频：链接: https://pan.baidu.com/s/19nbeB1HANLnUCqujZp4kTw 密码: v0w6<br>
 CI框架论坛：http://codeigniter.org.cn/forums/forum.php <br>
 <font style="color:red;">**CI3设置子目录控制器为默认控制器的解决办法：**</font> https://segmentfault.com/a/1190000010545766 <br>
 相互交流，百度、谷歌、慕课网；问学长学姐。<br>
