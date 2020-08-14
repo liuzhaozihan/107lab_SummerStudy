@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我要留言</title>
+    <link rel="stylesheet" href="<?php echo base_url() . 'style/index/' ?>css/leaveMessage.css">
+    <?php $this->load->view('index/head.html') ?>
+    <div class="mes_content">
+        <div class="content_sign">
+            <span>当前位置:</span>
+            <a href="<?php echo base_url() . 'index/' ?>">首页</a> >>
+            <a href="#">我要留言</a>
+        </div>
+        <p>编辑留言信息：</p>
+        <form action="<?php echo site_url('index/home/send') ?>" method="POST">
+            <table class="message">
+                <tr>
+                    <td class="th"><span>请输入你的邮箱：</span><input type="email" name="email"
+                            value="<?php echo set_value('email') ?>"></td>
+                </tr>
+                <tr>
+                    <td class="th"><span>请输入留言内容：</span></td>
+                </tr>
+                <tr>
+                    <td><textarea name="content" id="content" cols="70"
+                            rows="25"><?php echo set_value('content') ?></textarea><?php echo form_error('content', '<span style="color:red;">', '</span>') ?>
+                            </td>
+                </tr>
+                <tr>
+                    <td colspan="10"><input type="submit" class="input_button" value="发表留言" /></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <?php $this->load->view('index/foot.html') ?>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>计算机与信息工程学院官网</title>
+	<link href="<?php echo base_url() . 'style/index/' ?>css/home.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" href="<?php echo base_url() . 'style/index/' ?>css/swiper-bundle.min.css">
+	<?php $this->load->view('index/head.html') ?>
+	<!-- Swiper -->
+	<div class="swiper-container swiper1">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide"><a href="<?php echo $banner[0]['link'];?>" target="_blank"><img width="100%"
+						height="400px"
+					src="<?php echo base_url() . 'banners/'.$banner[0]['image'] ?>" alt=""></a></div>
+			<div class="swiper-slide"><a href="<?php echo $banner[1]['link'];?>" target="_blank"><img width="100%" height="400px"
+					src="<?php echo base_url() . 'banners/'.$banner[1]['image'] ?>" alt=""></a></div>
+			<div class="swiper-slide"><a href="<?php echo $banner[2]['link'];?>" target="_blank"><img width="100%" height="400px"
+					src="<?php echo base_url() . 'banners/'.$banner[2]['image'] ?>" alt=""></a></div>
+			<div class="swiper-slide"><a href="<?php echo $banner[3]['link'];?>" target="_blank"><img width="100%" height="400px"
+					src="<?php echo base_url() . 'banners/'.$banner[3]['image'] ?>" alt=""></a></div>
+		</div>
+		<div class="swiper-pagination swp1"></div>
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+	</div>
+	<div class="content">
+		<div class="content_top">
+			<div class="news_image">
+				<ul class="banner2">
+					<?php $k=0; foreach($xwgg as $v): ?>
+					<?php 
+						if(empty($v['thumb'])){
+							continue;
+						}
+					?>
+					<li><img width="400px" height="300px" src="<?php echo base_url() . 'uploads/' .$v['thumb'] ?>" arc="img">
+					</li>
+					<?php $k++;
+					if($k>=2){
+						break;
+					}
+					?>
+					<?php endforeach; ?>
+				</ul>
+				<div>
+					<ul class="jumpBtn">
+						<li index="1" id="on">1</li>
+						<li index="2" id="">2</li>
+					</ul>
+				</div>
+			</div>
+			<div class="news">
+				<span class="partial_title">
+					<a href="#">新闻公告</a>
+				</span>
+				<ul>
+					<?php $i=1; foreach($xwgg as $v): ?>
+					<li><img src="<?php echo base_url() . 'style/index/' ?>images/list_icon.png" alt=""><a
+							href="<?php echo site_url().'/art/'.$v['aid'] ?>"><?php 
+							if(strlen($v['title'])>80){
+								echo mb_substr($v['title'],'0','30','utf-8').'...';}
+							else{
+								echo $v['title'];}
+							?></a><span><?php echo date('M:d:h',$v['time']);?></span></li>
+                    <?php $i++; if($i>8) {break;} endforeach ?>
+                </ul>
+            </div>
+		</div>
+		<div class=" introduce">
+			<span class="partial_title">
+				<a href="#">中心简介</a>
+			</span>
+			<p><?php echo mb_substr($zxjj[0]['info'],'0','111','utf-8'); ?>...<a
+					href="<?php echo site_url().'/art/'.$zxjj[0]['aid'] ?>">详细</a></p>
+		</div>
+		<div class="tab_con">
+			<div class="tab_title">
+				<ul>
+					<li class="tab_current"><a href="<?php echo site_url().'/cate/'.$category[2]['cid']?>">心理百科</a></li>
+					<li class=""><a href="<?php echo site_url().'/cate/'.$category[3]['cid']?>">心理保健</a></li>
+					<li class=""><a href="<?php echo site_url().'/cate/'.$category[4]['cid']?>">心理咨询</a></li>
+				</ul>
+			</div>
+			<div class="tab_ul">
+				<ul style="display: block;">
+					<?php $i=1; foreach($xlbk as $v): ?>
+					<li><img src="<?php echo base_url() . 'style/index/' ?>images/list_tabicon.png" alt=""><a
+							href="<?php echo site_url().'/art/'.$v['aid'] ?>"><?php echo $v['title'] ?></a></li>
+					<?php $i++; if($i>6) break; endforeach ?>
+				</ul>
+				<ul style="display: none;">
+					<?php $i=1; foreach($xlbj as $v): ?>
+					<li><img src="<?php echo base_url() . 'style/index/' ?>images/list_tabicon.png" alt=""><a
+							href="<?php echo site_url().'/art/'.$v['aid'] ?>"><?php echo $v['title'] ?></a></li>
+					<?php $i++; if($i>6) break; endforeach ?>
+				</ul>
+				<ul style="display: none;">
+					<?php $i=1; foreach($xlzx as $v): ?>
+					<li><img src="<?php echo base_url() . 'style/index/' ?>images/list_tabicon.png" alt=""><a
+							href="<?php echo site_url().'/art/'.$v['aid'] ?>"><?php echo $v['title'] ?></a></li>
+					<?php $i++; if($i>6) break; endforeach ?>
+				</ul>
+			</div>
+		</div>
+		<div class="download">
+			<span class="partial_title">
+				<a href="#">下载中心</a>
+				<?php $i=1; foreach($xzzx as $v): ?>
+				<li><img src="<?php echo base_url() . 'style/index/' ?>images/list_tabicon.png" alt=""><a
+						href="<?php echo base_url() . 'uploads/'.$v['file'] ?>"><?php 
+						if(strlen($v['title'])>35){
+						echo mb_substr($v['title'],'0','15','utf-8').'...';}
+						else{
+						echo $v['title'];}
+						?></a></li>
+				<?php $i++; if($i>6) break; endforeach ?>
+			</span>
+		</div>
+	</div>
+
+
+
+
+	<?php $this->load->view('index/foot.html') ?>
+	<script src="<?php echo base_url() . 'style/index/' ?>js/index.js"></script>
+	<script src="<?php echo base_url() . 'style/index/' ?>js/swiper-bundle.min.js"></script>
+	<script>
+		var swiper = new Swiper('.swiper1', {
+			spaceBetween: 30,
+			centeredSlides: true,
+			autoplay: {
+				delay: 2500,
+				disableOnInteraction: false,
+			},
+			pagination: {
+				el: '.swp1',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+	</script>
+	</body>
+
+	</html>
