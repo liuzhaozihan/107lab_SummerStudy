@@ -1,0 +1,36 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() . '/style/admin/css/public.css' ?>">
+    <title>Document</title>
+</head>
+<body>
+    <table class="table">
+        <tr>
+            <td class="th" colspan="10">轮播图展示</td>
+        </tr>
+
+        <tr>
+            <td>BID</td>
+            <td>图片</td>
+            <td>链接</td>
+            <td>操作</td>
+        </tr>
+        <?php foreach($banner as $v): ?>
+        <tr>
+            <td><?php echo $v['bid'] ?></td>
+            <td colspan="1"><img height="100px" width="300px" src="<?php echo base_url() . 'banners/' . $v['image'] ?>" alt=""></td>
+            </td>
+            <td><a href="<?php echo $v['link'] ?>" target="_blank"><?php echo $v['link'] ?></a></td>
+            <td>
+                [<a href="<?php echo site_url('admin/banner/edit_banner/' . $v['bid']) ?>">编辑</a>]
+            </td>
+        </tr>
+        <?php endforeach ?>
+    </table>
+</body>
+
+</html>
