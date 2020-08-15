@@ -1,0 +1,20 @@
+.intro_content{
+	width: 1080px;
+    height: 500px;
+    margin: 20px auto;
+    border-top: 5px solid #39A4DB;
+}
+.intro_content h1{
+	font-size: 24px;
+    text-align: center;
+    margin: 15px auto;
+}
+.intro_content p, .intro_content ul{
+	margin:0 100px;
+}
+.intro_content ul li{
+	height: 30px;
+	line-height: 30px;
+	list-style: decimal;
+	list-style-position: inside;
+}

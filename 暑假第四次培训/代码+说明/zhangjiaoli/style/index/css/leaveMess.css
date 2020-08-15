@@ -1,0 +1,26 @@
+.leaveMess{
+	width: 950px;
+    margin: 30px auto;
+}
+.leaveMess p{
+	height: 50px;
+    line-height: 50px;
+    color: #39A4DB;
+    font-weight: bold;
+}
+.eamil{
+	height: 40px;
+}
+.eamil input{
+	width: 200px;
+	font-size: 100%;
+}
+.messBoard span{
+	height: 40px;
+	line-height: 40px;
+    font-size: 16px;
+    display: block;
+}
+button, textarea{
+	font-size: 100%;
+}

@@ -1,0 +1,62 @@
+.newlist{
+	width: 950px;
+    height: 500px;
+    margin: 30px auto;
+}
+.list_img{
+	width: 272px;
+    height: 435px;
+    float: left;
+}
+.list_img img{
+	width: 272px;
+    height: 435px;
+}
+.list{
+	width: 678px;
+    height: 365px;
+    padding-top: 20px;
+    float: right;
+    clear: both;
+}
+.list li{
+	height: 35px;
+    line-height: 35px;
+    padding-left: 20px;
+}
+.list li span{
+    color: black;
+    float: right;
+}
+.list li img{
+	width: 16px;
+	height: 16px;
+    margin-bottom:9px;
+}
+.list li a{
+    display: inline-block;
+	width: 71%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: black;
+} 
+.changePage{
+	float: right;
+    width: 200px;
+    height: 50px;
+    margin-top: 35px;
+}
+.changePage button{
+	font-size: 14px;
+    height: 25px;
+   line-height: 14px;
+}
+.changePage input{
+	width: 50px;
+	height: 20px;
+	font-size: 100%;
+}
+button a{
+    color: black;
+}
