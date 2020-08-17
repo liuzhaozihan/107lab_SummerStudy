@@ -1,0 +1,248 @@
+@charset "utf-8";
+/* CSS Document */
+.banner .swiper-container {
+	width: 100%;
+	height: 400px;
+}  
+.banner .swiper-slide{
+	background-color: red;
+	text-align: center;
+}
+.banner .swiper-slide img{
+	width: 100%;
+	height: 100%;
+}
+/* content start */
+.content{
+	width: 100%;
+	height: 550px;
+	margin-top: 15px;
+}
+.content a{
+	color: #000;
+}
+.content a:hover{
+	color: #39A4DB;
+}
+.content .top{
+	width: 1080px;
+	height: 320px;
+	border-top:5px solid #39A4DB;
+	margin:0 auto;
+}
+.content .top .img{
+	width: 400px;
+	height: 300px;
+	margin-top: 15px;
+	margin-left: 10px;
+	float: left;
+	overflow: hidden;
+}
+.content .top .img .swiper-container{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.content .top .img .swiper-slide{
+	background-color: red;
+	text-align: center;
+}
+.content .top .img .swiper-slide img{
+	width: 100%;
+	height: 100%;
+	transition: all 0.6s;
+}
+.content .top .img .swiper-slide img:hover{
+	transform: scale(2.0);
+}
+.content .top .news{
+	width: 630px;
+	height: 280px;
+	margin-left: 20px;
+	margin-top: 30px;
+	float: left;
+}
+.content .top .news .newsTop{
+    width: 100%;
+	height: 13%;
+	font-weight: bold;
+	font-family: "宋体";
+}
+.content .top .news .newsTop p{
+	width: 20%;
+	height: 100%;
+}
+.content .top .news .newsTop p a{
+	color: #000;
+	font-size: 20px;
+	/* font-weight: bold; */
+}
+.content .top .news .newsTop p a:hover{
+	color: #39A4DB;
+}
+.content .top .news .newsContent{
+	width: 100%;
+	height: 88%;
+	border-top:2px solid #39A4DB;
+    font-family: "宋体";
+    line-height: 30px;
+}
+.content .top .news .newsContent table{
+	width: 100%;
+}
+.content .top .news .newsContent img{
+	width: 17px;
+	height: 17px;
+	float: left;
+}
+.content .top .news .newsContent .title{
+	float: left;
+}
+.content .top .news .newsContent .time{
+	float: right;
+}
+
+
+
+.content .bottom{
+	width: 1060px;
+	height: 230px;
+	margin:0 auto;
+	margin-top: 10px;
+	font-family: "宋体";
+}
+
+.content .bottom .jianjie{
+	width: 280px;
+	height: 100%;
+	float: left;
+	font-family: "宋体";
+}
+
+.content .bottom .jianjie .jianjie_top{
+    width: 100%;
+	height: 20%;
+	font-weight: bold;
+	font-family: "宋体";
+}
+.content .bottom .jianjie .jianjie_top p{
+	width: 30%;
+	height: 80%;
+	padding-top: 10px;
+}
+.content .bottom .jianjie .jianjie_top a{
+	color: #000;
+	font-size: 20px;
+}
+.content .bottom .jianjie .jianjie_top a:hover{
+	color: #39A4DB;
+}
+.content .bottom .jianjie .jianjie_content{
+	width: 100%;
+	height: 80%;
+	border-top:2px solid #39A4DB;
+	padding-top: 10px;
+	padding-left: 5px;
+	font-size: 16px;
+	line-height: 22px;
+}
+.content .bottom .jianjie .jianjie_content a{
+	color: #39A4DB;
+}
+
+.content .bottom .xinli{
+	width: 450px;
+	height: 100%;
+	float: left;
+	font-family: "宋体";
+	margin-left: 20px;
+}
+
+.content .bottom .xinli .xinli_top{
+    width: 100%;
+	height: 20%;
+	font-weight: bold;
+	font-family: "宋体";
+}
+.content .bottom .xinli .xinli_top ul{
+	width: 100%;
+	height: 100%;
+}
+.content .bottom .xinli .xinli_top ul li{
+	height: 78%;
+	float: left;
+	width: 120px;
+	text-align: center;
+	padding-top: 10px;
+	border-radius: 5px;
+}
+.content .bottom .xinli .xinli_top ul .hover{
+	background-color: #39A4DB;
+}
+.content .bottom .xinli .xinli_top a{
+	color: #000;
+	font-size: 20px;
+}
+.content .bottom .xinli .xinli_top a:hover{
+	color: #fff;
+}
+.content .bottom .xinli .xinli_content{
+	width: 100%;
+	height: 80%;
+	border-top:2px solid #39A4DB;
+}
+.content .bottom .xinli .xinli_content ul{
+    height: 100%;
+    width: 100%;
+    line-height: 30px;
+    padding-top: 10px;
+    padding-left: 7px;
+}
+.content .bottom .xinli .xinli_content ul li{
+	width: 100%;
+	height: 100%;
+}
+.content .bottom .xinli .xinli_content ul img{
+	width: 16px;
+	height: 16px;
+	float: left;
+}
+.content .bottom .download{
+	width: 280px;
+	height: 100%;
+	font-family: "宋体";
+	float: left;
+	margin-left: 20px;
+}
+
+.content .bottom .download .download_top{
+    width: 100%;
+	height: 20%;
+	font-weight: bold;
+	font-family: "宋体";
+}
+.content .bottom .download .download_top p{
+	width: 30%;
+	height: 80%;
+	padding-top: 10px;
+}
+.content .bottom .download .download_top a{
+	color: #000;
+	font-size: 20px;
+}
+.content .bottom .download .download_top a:hover{
+	color: #39A4DB;
+}
+.content .bottom .download .download_content{
+	width: 100%;
+	height: 80%;
+	border-top:2px solid #39A4DB;
+	line-height: 30px;
+	padding-top: 10px;
+}
+.content .bottom .download .download_content img{
+	height: 16px;
+	width: 16px;
+	float: left;
+}
+/* content end */
