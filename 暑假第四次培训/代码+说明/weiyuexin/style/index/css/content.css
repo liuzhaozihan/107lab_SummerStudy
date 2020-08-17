@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+.content{
+	width: 950px;
+	height: 500px;
+	margin: 0 auto;
+}
+.content .top{
+	width: 100%;
+	height: 30px;
+	padding-top: 20px;
+}
+.content .bottom{
+	width: 100%;
+	height: 440px;
+	margin:0 auto;
+	border-top:5px solid #39A4DB;
+}
+.content h2{
+	text-align: center;
+	font-family: "宋体";
+}
+.content h4{
+	float: right;
+}
+.content span{
+	font-weight: bold;
+}
+.content p{
+	font-family: "宋体";
+}
