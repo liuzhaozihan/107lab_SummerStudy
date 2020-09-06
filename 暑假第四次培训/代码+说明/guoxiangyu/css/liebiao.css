@@ -1,0 +1,12 @@
+.Content{
+    width: 950px;
+    height:200px;
+	margin: 0px auto; 
+}
+.content {
+	border-bottom: 5px solid #39A4DB; 
+}
+.Content pre{
+	font-size: 14px;
+	text-align: center;
+}
