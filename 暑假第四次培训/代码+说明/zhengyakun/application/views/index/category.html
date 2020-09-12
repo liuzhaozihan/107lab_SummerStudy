@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>后盾网文章管理系统</title>
+ <link rel="stylesheet" type="text/css" href="<?php echo base_url() . '/style/admin/css/public.css' ?>">
+ <link href="<?php echo base_url() . 'style/index/' ?>css/category.css" rel="stylesheet" />
+<?php $this->load->view('index/head.html') ?>
+<div id="main">
+	<?php $cid=$this->uri->segment(4);$cid-=1;?>
+		<div class='news_list'>
+			<div class="content_sign">
+				<span>当前位置:</span>
+				<a href="<?php echo base_url() . 'index/' ?>">首页</a> >>
+				<a href="<?php echo site_url().'/cate/'.$category[$cid]['cid']?>"><?php echo $category[$cid]['cname'] ?></a>
+			</div>
+			<div class="list_img">
+				<img src="<?php echo base_url() . 'style/index/' ?>images/newslist.jpg" alt="">
+			</div>
+			<div class="list">
+				<ul>
+					<?php foreach($article as $v): ?>
+					<li><img src="<?php echo base_url() . 'style/index/' ?>images/list_icon.png" alt=""><a
+							href="<?php echo site_url().'/art/'.$v['aid'] ?>"><?php 
+							if(strlen($v['title'])>80){
+								echo mb_substr($v['title'],'0','30','utf-8').'...';}
+							else{
+								echo $v['title'];}
+							?></a><span><?php echo $v['time'];?></span></li>
+					<?php endforeach ?>
+				</ul>
+				<div class="page">
+					<?php echo $links ?>
+				</div>
+			</div>
+		</div>
+	</div>
+		<?php $this->load->view('index/foot.html') ?>
+</body>
+</html>
