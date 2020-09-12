@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/*top*/
+.top {
+    background-color: #39A4DB;
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    position: relative;
+}
+.top p{
+    position: absolute;
+    top: auto;
+    right: 15%;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    margin:0;
+    top:0;
+    font-family: "Courier New", Courier, monospace;
+}
+/*logo*/
+.logo {
+    width: 100%;
+    height: 100px;
+}
+.logo a {
+    display: block;
+    margin-left: 15%;
+    padding-top: 20px;
+}
+img {
+    border: none;
+}
+/*nav*/
+.Nav{
+	width: 100%;
+	height:45px;
+    background-color:  #39A4DB;
+    border-top: 1px solid #ffffff;
+}
+.nav {
+    width: 1200px;
+    height: 45px;
+    background-color: #39A4DB;
+    margin: 0 auto;
+}
+.nav >ul>li{
+	color: white;
+	float: left;
+	line-height: 45px;
+    font-size: 14px; 
+    text-align: center;
+    width: 120px;
+    height: 45px;
+}
+.nav a{
+	display: block;
+	color: white;
+}
+.nav_list ol{	
+    position: absolute;
+    width: inherit;
+    display: none;
+   /* z-index: 10;*/
+}
+.nav_list ol li {
+    position: relative;
+    width: 120px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    padding: 0px;
+    background-color: #3C93ED;
+    z-index: 10;
+}
+.nav ul li>a:hover{
+	letter-spacing: 1px;
+	background-color: #3C93ED;
+	cursor: pointer;
+}
+/*----Content-----*/
+.content{
+	width: 1080px;
+	height: 550px;
+	margin: 10px auto;
+	padding: 10px 0; 
+}
+.content_top{
+	width: 1080px;
+	height: 310px; 
+	border-top: 5px solid #39A4DB; 
+}
+.news_image{
+	width: 400px;
+	height: 300px; 
+	margin-left: 15px;
+	margin-top: 10px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+.news_image ul{
+	width: 400px;
+}
+.news_image ul li{
+	float: left;
+}
+.news_image img{
+	width: 400px;
+	height: 300px;
+}
+.news_image ol{ 
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+.news_image ol li{
+	float: left;
+	width: 20px;
+	height: 20px;
+	font-size: 14px;
+	background-color: #ccc;
+	border: 1px solid white;
+	color: #39A4DB;
+	text-align: center; 
+	cursor: pointer;
+}
+.news_image .current_num{
+	background-color: #39A4DB;
+	color: white;
+}
+/*--news--*/
+.news{
+	width: 625px;
+	height: 300px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+.content  a{ 
+	color: #3D3847;
+	height: 30px;
+	line-height: 30px;
+}
+.content a:hover{
+	color: #39A4DB;
+}
+.p_title{
+	display: block;
+	height: 50px;
+	width: 100%;
+	line-height: 50px;
+	font-size:1.25em;
+	font-weight: bold;  
+	border-bottom: 2px solid #39A4DB;
+	margin-bottom: 10px; 
+}	
+.news ul li img{
+	width: 16px;
+	height: 16px; 
+}
+.content_bottom{
+	margin-top: 10px; 
+}
+.left{
+	width: 280px;
+	height: 230px; 
+	float: left;
+	margin-left: 15px;
+}
+.left p{ 
+	color: #3D3847; 
+}  
+.left p a{
+	color: #39A4DB;
+}
+
+.medium{
+	width: 450px;
+	height: 230px;
+	float: left; 
+	margin-left: 20px;
+}
+
+.medium ul{
+	width: 450px;
+	height: 250px; 
+}
+
+.m_title ul{
+	width: 450px;
+	height: 50px; 
+	margin-bottom: 10px;
+	border-bottom: 2px solid #39A4DB;
+}
+
+.m_title ul li{ 
+	height: 50px; 
+	width: 120px;
+	text-align: center;
+	float: left; 
+	line-height: 50px;
+	font-size:1.25em;
+	font-weight: bold; 
+	border-radius:  5px; 
+} 
+.m_ul{
+	width: 450px;
+	height: 200px;
+	padding-left: 10px;
+	overflow: hidden;
+} 
+.m_ul img, .right img{
+	width: 16px; 
+	height: 16px;
+}
+.m_title ul li:hover{
+	background-color: #39A4DB;
+}
+.m_title ul li a:hover{
+	color: white;
+}
+
+.m_current{
+	background-color: #39A4DB;
+}
+.hide{
+	display: none;
+}
+.content_bottom li{
+	height: 30px;
+	line-height: 30px;
+	color: black; 
+} 
+/*right*/
+.right{
+	width: 280px;
+	height: 230px; 
+	float: left;
+	margin-left: 20px; 
+} 
+
+.right ul li{ 
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-o-text-overflow:ellipsis;
+}
+
+/*----foot----*/
+.foot {
+    width: 100%;
+    height: 80px;
+    border-top: 5px solid #ccc;
+}
+.foot pre {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #565656;
+}
